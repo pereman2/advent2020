@@ -1,7 +1,5 @@
 # advent2020
 
-**day 1**
+solutions are done as fast as possible so my friends don't beat me, don't mind me.
 
-1. O(n)
-2. O(n^2) Don't know if could be done in O(n)
 
