@@ -16,11 +16,11 @@ while x < len(data):
     l2 = copy.copy(data[x])
     l.pop() # remove trailing \n
     l2.pop()
-    while y >= len(l):
-        l += l2
+    if y >= len(l):
+        y = y % len(l)
     if l[y] == TREE:
         trees += 1
-    y += 3
+    y = (y + 3) % len(l)
     x += 1
 
 print(trees)

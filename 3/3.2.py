@@ -27,11 +27,9 @@ for down, right in ways:
         l2 = copy.copy(data[x])
         l.pop() # remove trailing \n
         l2.pop()
-        while y >= len(l):
-            l += l2
         if l[y] == TREE:
             trees += 1
-        y += right
+        y = (y + right) % len(l)
         x += down
     mult *= trees
 
