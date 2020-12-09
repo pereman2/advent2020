@@ -17,6 +17,9 @@ for rule in data:
     bags[l] = []
     bags[l] += contain
 
+print(bags)
+
+
 SHINY = "shiny gold"
 
 def resolve_bag(bag):
